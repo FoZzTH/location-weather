@@ -3,6 +3,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 
 import { WeatherReportsModule } from './weather-reports/weather-reports.module';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -10,6 +11,10 @@ import { WeatherReportsModule } from './weather-reports/weather-reports.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       typePaths: ['./**/*.schema.graphql'],
+      definitions: {
+        path: join(process.cwd(), 'src/graphql.ts'),
+        outputAs: 'class',
+      },
     }),
   ],
 })
