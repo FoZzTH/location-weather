@@ -17,7 +17,6 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
 $ npm run start
 ```
 
@@ -27,13 +26,12 @@ API written on GraphQL. To get correct response from server need to run followed
 
 ```
 query {
-  weatherReport(lat: 51.509865, lng: -0.118092, date: "2022-02-25"){ description}
+  weatherReport(lat: 51.509865, lng: -0.118092, date: "2022-02-25"){ description }
 }
 ```
 
 ## Test
 
 ```bash
-# unit tests
 $ npm run test
 ```
