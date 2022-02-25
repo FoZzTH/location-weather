@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { OpenWeatherMapModule } from 'src/open-weather-map/open-weather-map.module';
+import { OpenWeatherMapModule } from '../open-weather-map/open-weather-map.module';
 import { WeatherReportsResolver } from './weather-reports.resolver';
 import { WeatherReportsService } from './weather-reports.service';
 

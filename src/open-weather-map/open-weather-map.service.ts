@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { lastValueFrom, map } from 'rxjs';
 
-import { env } from 'src/env';
+import { env } from '../env';
 import { OWMResponse } from './types/owm-response.type';
 
 @Injectable()
