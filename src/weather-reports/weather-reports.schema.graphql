@@ -1,0 +1,7 @@
+type WeatherReports {
+  description: String!
+}
+
+type Query {
+  weatherReport(lat: Float!, lng: Float!, date: String!): WeatherReports!
+}
